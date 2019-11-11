@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Test Enhanced Fetch</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrapper">
+    <button id="btn-create-task" class="btn-create" tabindex="1">Create task</button>
+    <button id="btn-cancel-task" class="btn-cancel" tabindex="2" disabled>Cancel task</button>
+</div>
+<div id="log" class="data-log">
+    <h3>Log of operations</h3>
+</div>
+
+<script>
+    // ====== Можно проверить, что полифиллы работают, если раскомментировать следующие строки
+    window.fetch = undefined;
+    window.AbortController = undefined;
+    window.Promise = undefined;
+</script>
+
+<script src="../dist/index.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

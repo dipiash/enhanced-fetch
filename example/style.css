@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    padding: 10px;
+    background: #eee;
+}
+
+.btn-create, .btn-cancel {
+    padding: 10px;
+    font-size: 24px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-create {
+    background: #28B463;
+}
+
+.btn-create:hover {
+    background: #2ECC71;
+}
+
+.btn-create:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.btn-cancel {
+    background: #B03A2E;
+}
+
+.btn-cancel:hover {
+    background: #E74C3C;
+}
+
+.btn-cancel:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.data-log {
+    padding: 10px;
+    background: rgba(238, 238, 238, 0.71);
+    max-height: 600px;
+    overflow-y: auto;
+}

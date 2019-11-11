@@ -1,0 +1,35 @@
+{
+  "name": "enhanced-fetch",
+  "version": "1.0.0",
+  "description": "Enhanced fetch library",
+  "main": "dist/index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "development": "NODE_ENV=development webpack --mode development --watch",
+    "build": "NODE_ENV=production webpack --mode production"
+  },
+  "author": "dipiash",
+  "license": "MIT",
+  "repository": {
+    "type" : "git",
+    "url" : "git@github.com:dipiash/enhanced-fetch.git"
+  },
+  "dependencies": {
+    "abortcontroller-polyfill": "^1.4.0",
+    "promise-polyfill": "8.1.3",
+    "whatwg-fetch": "^3.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/preset-env": "^7.7.1",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
+    "compression-webpack-plugin": "^3.0.0",
+    "terser-webpack-plugin": "^2.2.1",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}
