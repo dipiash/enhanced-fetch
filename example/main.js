@@ -17,13 +17,13 @@
         }
     };
 
-    if (!window['enhanced-fetch']) {
-        logger('"enhanced-fetch" is not defined in window scope');
+    if (!window['enhancedFetch']) {
+        logger('"enhancedFetch" is not defined in window scope');
 
         return;
     }
 
-    var {requestByFetch} = window['enhanced-fetch'];
+    var {requestByFetch} = window['enhancedFetch'];
 
     var btnCreate = document.getElementById('btn-create-task');
     var btnCancel = document.getElementById('btn-cancel-task');
