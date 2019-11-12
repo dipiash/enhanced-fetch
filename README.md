@@ -22,6 +22,24 @@ if (!window['enhancedFetch']) {
 }
 
 var { requestByFetch } = window['enhancedFetch'];
+
+var fetchInstance = requestByFetch.createInstance({baseUrl: 'https://poller.jeetiss.now.sh',});
+var abortC = fetchInstance.abortController();
+
+fetchInstance.fetch('/post', {
+    signal: abortC.signal,
+    method: 'POST',
+    mode: "cors",
+}, 10000,)
+    .then(res => res.json())
+    .then(res => {
+        console.log(res)
+    })
+    .catch(err => {
+        console.log(err)
+    });
+
+abortC.abort()
 ```
 or
 ```js
