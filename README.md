@@ -11,7 +11,19 @@ Open `/example/index.html` in your browser.
 ## How to build project for production
 1. `npm run build`
 
-## Also you can use import or require
+## For usage: you can use script tag, import or require
+```js
+<script src="dist/index.js"></script>
+
+if (!window['enhancedFetch']) {
+    alert('"enhancedFetch" is not defined in window scope');
+
+    return;
+}
+
+var { requestByFetch } = window['enhancedFetch'];
+```
+or
 ```js
 import enhancedFetch from 'enhanced-fetch'
 ```
