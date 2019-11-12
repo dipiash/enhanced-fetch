@@ -4,6 +4,14 @@ export const enhancedFetch = (options = {}) => {
         baseUrl: options.baseUrl,
     };
 
+    const errorHandler = res => {
+      if (!res.ok) {
+        throw Error(res.status);
+      }
+
+      return res;
+    };
+
     _container.createInstance = (options = {}) => {
         return enhancedFetch(options);
     };
@@ -32,7 +40,7 @@ export const enhancedFetch = (options = {}) => {
             }, timeout);
         }
 
-        return request.finally(() => clearTimeout(timeoutRequest));
+        return request.then(errorHandler).finally(() => clearTimeout(timeoutRequest));
     };
 
     _container.abortController = () => {
