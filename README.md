@@ -3,10 +3,12 @@
 ## How to view example
 Open `/example/index.html` in your browser.
 
+## Before start
+`npm i`
+
 ## How to start project for development with example app
-1. `npm i`
-2. `npm run development`, also you can use a production mode `npm run build`
-3. Open `/example/index.html` in your browser for test
+1. `npm run development`, also you can use a production mode `npm run build`
+2. Open `/example/index.html` in your browser for test
 
 ## How to build project for production
 1. `npm run build`
@@ -53,3 +55,13 @@ or
 ```js
 const { enhancedFetch } = require('enhanced-fetch')
 ```
+
+## TODO
+- [ ] Add unit tests
+- [ ] Publish into npm
+- [ ] Add CI
+- [ ] Add auto generation CHANGELOG and version - https://github.com/conventional-changelog/standard-version
+- [ ] Add ESLint rules
+- [ ] Add Prettier
+- [ ] Add husky and lint-staged
+- [ ] Add typings (TS or Flow)
