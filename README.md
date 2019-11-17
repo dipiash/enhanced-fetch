@@ -58,7 +58,7 @@ const { enhancedFetch } = require('enhanced-fetch-lib')
 
 ## TODO
 - [ ] Add unit tests
-- [ ] Publish into npm
+- [x] Publish into npm
 - [ ] Add CI
 - [ ] Add auto generation CHANGELOG and version - https://github.com/conventional-changelog/standard-version
 - [ ] Add ESLint rules
