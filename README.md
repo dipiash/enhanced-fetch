@@ -63,7 +63,7 @@ const { enhancedFetch } = require('enhanced-fetch-lib')
 ```
 
 ## TODO
-- [ ] Add unit tests
+- [x] Add unit tests
 - [ ] Improve example. Separate interface control from logic
 - [x] Publish into npm
 - [ ] Add CI
