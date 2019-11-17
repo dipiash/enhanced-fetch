@@ -1,3 +1,5 @@
+[![npm version](https://badge.fury.io/js/enhanced-fetch-lib.svg)](https://badge.fury.io/js/enhanced-fetch-lib)
+
 # enhanced-fetch-lib
 Cross browser wrapper for fetch.
 
