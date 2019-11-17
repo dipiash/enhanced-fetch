@@ -1,4 +1,9 @@
 # enhanced-fetch-lib
+Cross browser wrapper for fetch.
+Polyfill is used under the hood:
+- [promise-polyfill](https://www.npmjs.com/package/promise-polyfill)
+- [whatwg-fetch](https://www.npmjs.com/package/whatwg-fetch)
+- [abortcontroller-polyfill](https://www.npmjs.com/package/abortcontroller-polyfill)
 
 ## How to view example
 Open `/example/index.html` in your browser.
