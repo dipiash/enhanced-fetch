@@ -1,5 +1,5 @@
 {
-  "name": "enhanced-fetch",
+  "name": "enhanced-fetch-lib",
   "version": "1.0.0",
   "description": "Enhanced fetch library",
   "main": "dist/index.js",
@@ -14,7 +14,7 @@
   "license": "MIT",
   "repository": {
     "type" : "git",
-    "url" : "git@github.com:dipiash/enhanced-fetch.git"
+    "url" : "git@github.com:dipiash/enhanced-fetch-lib.git"
   },
   "dependencies": {
     "abortcontroller-polyfill": "^1.4.0",

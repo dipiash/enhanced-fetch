@@ -11,7 +11,7 @@ const plugins = [];
 if (mode === 'production') {
     minimizer.push(
         new TerserPlugin({
-            cache: 'node_modules/.cache/terser-loader/enhanced-fetch',
+            cache: 'node_modules/.cache/terser-loader/enhanced-fetch-lib',
             parallel: true,
             sourceMap: true,
             extractComments: false,

@@ -1,4 +1,4 @@
-# enhanced-fetch
+# enhanced-fetch-lib
 
 ## How to view example
 Open `/example/index.html` in your browser.
@@ -45,15 +45,15 @@ abortC.abort()
 ```
 or
 ```js
-import enhancedFetch from 'enhanced-fetch'
+import enhancedFetch from 'enhanced-fetch-lib'
 ```
 or
 ```js
-const enhancedFetch = require('enhanced-fetch').default
+const enhancedFetch = require('enhanced-fetch-lib').default
 ```
 or
 ```js
-const { enhancedFetch } = require('enhanced-fetch')
+const { enhancedFetch } = require('enhanced-fetch-lib')
 ```
 
 ## TODO
